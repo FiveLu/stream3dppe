@@ -60,12 +60,12 @@ tools/dist_test.sh [-config] [-model] [-num_gpus] --eval bbox
 | Model | Setting |Pretrain| Lr Schd | Training Time | NDS| mAP | Config | Download|
 | :---: | :---: | :---: | :---: | :---:|:---:| :---: | :---: |:---: |
 |StreamPETR| V2-99 - 900q | [FCOS3D](https://github.com/exiawsh/storage/releases/download/v1.0/fcos3d_vovnet_imgbackbone-remapped.pth) | 24ep | 13h | 57.1 | 48.3 |[config](projects/configs/StreamPETR/stream_petr_vov_flash_800_bs2_seq_24e.py) |[model](https://github.com/exiawsh/storage/releases/download/v1.0/stream_petr_vov_flash_800_bs2_seq_24e.pth)/[log](https://github.com/exiawsh/storage/releases/download/v1.0/stream_petr_vov_flash_800_bs2_seq_24e.log) |
-| **Stream3dppe** | V2-99 - 900q | [FCOS3D](https://github.com/exiawsh/storage/releases/download/v1.0/fcos3d_vovnet_imgbackbone-remapped.pth) | 24ep | 16h | **58.4** | **49.9** | [config](projects/configs/StreamPETR_3dppe/streampetr_3dppe_vov_flash_800_bs2_seq_24e_4x4_no_context_womv.py)| [model]()/[log](https://drive.google.com/file/d/1hvo6y6uUVR8ixcZA9ktcCsYxEEi3KXDR/view?usp=drive_link) |
+| **Stream3dppe** | V2-99 - 900q | [FCOS3D](https://github.com/exiawsh/storage/releases/download/v1.0/fcos3d_vovnet_imgbackbone-remapped.pth) | 24ep | 16h | **58.4** | **49.9** | [config](projects/configs/StreamPETR_3dppe/streampetr_3dppe_vov_flash_800_bs2_seq_24e_4x4_no_context_womv.py)| [model](https://drive.google.com/file/d/1Emyk0h2DK1mHuU8XGv5sVuCr1I4i7bAr/view?usp=sharing)/[log](https://drive.google.com/file/d/1hvo6y6uUVR8ixcZA9ktcCsYxEEi3KXDR/view?usp=drive_link) |
 | **Stream3dppe_gt_detph** | V2-99 - 900q | [FCOS3D](https://github.com/exiawsh/storage/releases/download/v1.0/fcos3d_vovnet_imgbackbone-remapped.pth) | 24ep | 22h | 61.7 | 55.3 | [config](projects/configs/StreamPETR_3dppe/streampetr_3dppe_vov_flash_800_bs2_seq_24e_4x2_gtdepth.py)| [model](https://drive.google.com/file/d/1nNkIwY6rNFUlnXCkVF91l9sPyLQ77Chh/view?usp=drive_link)/[log](https://drive.google.com/file/d/1bzDzv4ErIbkvMcYxetDqnh70k2_yv_um/view?usp=drive_link) |
 
 **Note :** `Stream3dppe` is trained on 4 x RTX 3090 with bs4 ,while `Stream3dppe_gt_detph` is trained on 4 x RTX 2080Ti with bs2 .
 
-
+More result please refer to https://github.com/drilistbox/3DPPE.
 
 ---
 ## Acknowledgement
