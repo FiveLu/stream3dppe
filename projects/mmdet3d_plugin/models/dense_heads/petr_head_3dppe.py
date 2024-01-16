@@ -187,11 +187,11 @@ class StreamPETRHead3DPPE(StreamPETRHead):
         if self.num_propagated > 0:
             self.pseudo_reference_points = nn.Embedding(self.num_propagated, 3)
 
-        self.query_embedding = nn.Sequential(
-            nn.Linear(self.embed_dims*3//2, self.embed_dims),
-            nn.ReLU(),
-            nn.Linear(self.embed_dims, self.embed_dims),
-        )
+        # self.query_embedding = nn.Sequential(
+        #     nn.Linear(self.embed_dims*3//2, self.embed_dims),
+        #     nn.ReLU(),
+        #     nn.Linear(self.embed_dims, self.embed_dims),
+        # )
 
         self.time_embedding = nn.Sequential(
             nn.Linear(self.embed_dims, self.embed_dims),
